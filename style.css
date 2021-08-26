@@ -1,0 +1,124 @@
+body{
+    background-image: url(assets/images/cork-board.png);
+   
+   background-size: cover;
+}
+.container-fluid{
+    justify-content:center;
+
+
+}
+@font-face{
+    src: url(assets/fonts/Guaraldo.ttf);
+    font-family: Guaraldo;
+}
+h2.myboard{  
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 15px;
+    font-size: 40px;
+    font-weight: bolder;
+     font-family: Guaraldo;
+}
+textarea.context{
+    padding-left: 30px;
+    border-radius: 20px;
+    border: rgba(0, 0, 0, 0.192) solid;
+    height: 250px;
+    width: 700px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    box-sizing: border-box;
+    background: url(assets/images/textarea.jpeg);
+    background-attachment: local;
+
+}
+
+.buttons>*{
+    margin: 15px;
+    width:inherit;
+}
+
+#OnBoard{
+    margin-left: 100px ;
+}
+
+textarea::-webkit-scrollbar {
+    width: 10px;
+    background-color:white;
+    
+  }
+textarea::-webkit-scrollbar-thumb {
+   
+  background-color:burlywood;
+  }
+
+.note{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    justify-content: center;
+    background: url(assets/images/images.jpg);
+    background-size: 300px 400px;
+    animation: Fade-IN;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    opacity:1;
+
+}
+@keyframes Fade-IN{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes Fade-Out{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.menu{
+    width: 200px;
+    height:200px;
+    overflow: auto;
+    display: inline-block ;
+    margin-left: 4px;
+    margin-bottom: 0px;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer{
+    width:auto;
+    height: auto;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+.fa-times{
+    
+    opacity: 0.0;
+    color: black;
+    margin-top: 10px;
+    height: 20px;
+    font-size: 15px;
+    margin-left: 250px;
+}
+
+div:hover>i{
+    opacity: 1.0;
+}

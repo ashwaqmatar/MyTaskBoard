@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://img.icons8.com/cute-clipart/64/000000/edit.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        
+    <link rel="StyleSheet" href="style.css">
+    <script defer src="main.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+       <div class="row d-flex justify-content-center ">
+               <h2 class="myboard"> My Task Board </h2>
+       </div> 
+       <form>
+           <div id="form-div" class="note-container container  row d-inline-flex col d-flex d-flex justify-content-center align-self'">
+               
+                   <textarea class="context" id="content-text" placeholder="Write Your Notes............"  required autofocus></textarea>
+
+               
+           </div>
+           <div class="row d-flex justify-content-center ">
+               <div class="col-5 d-flex buttons">
+            
+                <input type="date"  id="DateNow" class="btn btn-primary">
+                <input type="time" id="TimeNow" class="btn btn-primary" >
+                   
+                   <button type="button" class="btn btn-primary" onclick="Add()"> Add </button>
+                   <button type="button" class="btn btn-primary" onclick="Clear()">Clear</button>
+               </div>
+               
+           </div>
+       </form>
+       <div class="row d-flex " id="OnBoard">
+       </div>
+    </div>
+</body>
+</html>
